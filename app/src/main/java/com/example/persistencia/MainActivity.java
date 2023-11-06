@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         guardar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                String cadena= nom.getText().toString()+","+cognom.getText().toString()+","+tel.getText().toString()+","+email.getText().toString();
+                String cadena= nom.getText().toString()+","+cognom.getText().toString()+";"+tel.getText().toString()+","+email.getText().toString();
                 try {
                     FileOutputStream fos = null;
                     fos = context.openFileOutput("contactes.txt", Context.MODE_PRIVATE);
